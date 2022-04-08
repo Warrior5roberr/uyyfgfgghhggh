@@ -1,0 +1,3529 @@
+local lp = game:FindService("Players").LocalPlayer
+
+local function gplr(String)
+	local Found = {}
+	local strl = String:lower()
+	if strl == "all" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			table.insert(Found,v)
+		end
+	elseif strl == "others" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name ~= lp.Name then
+				table.insert(Found,v)
+			end
+		end 
+	elseif strl == "me" then
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name == lp.Name then
+				table.insert(Found,v)
+			end
+		end 
+	else
+		for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+			if v.Name:lower():sub(1, #String) == String:lower() then
+				table.insert(Found,v)
+			end
+		end 
+	end
+	return Found 
+end
+
+
+
+
+
+
+
+local toggle1 = false
+local toggle2 = false
+local toggle3 = false
+local toggle4 = false
+local toggle5 = false
+local toggle6 = false
+local toggle7 = false
+local toggle8 = false
+local toggle9 = false
+local toggle10 = false
+local toggle11 = false
+local toggle12 = false
+local toggle13 = false
+local toggle14 = false
+local toggle15 = false
+local toggle16 = false
+local toggle17 = false
+
+
+
+
+
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local BrookHavenguiv6 = Instance.new("ScreenGui")
+local Drag = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Home = Instance.new("TextButton")
+local Trolling = Instance.new("TextButton")
+local PatchednotWorkingScript = Instance.new("TextButton")
+local Youtube = Instance.new("TextButton")
+local Player = Instance.new("TextButton")
+local Removegui = Instance.new("TextButton")
+local FunScripts = Instance.new("TextButton")
+local House = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Ho = Instance.new("Frame")
+local Good = Instance.new("TextLabel")
+local Name1 = Instance.new("TextLabel")
+local Rejoin = Instance.new("TextButton")
+local Spectategui = Instance.new("TextButton")
+local Trollge = Instance.new("ScrollingFrame")
+local Roommatebuttonall = Instance.new("TextBox")
+local Roommateall = Instance.new("TextButton")
+local Roomm = Instance.new("TextButton")
+local Attach = Instance.new("TextBox")
+local AttachButton = Instance.new("TextButton")
+local Bring = Instance.new("TextBox")
+local Bringall = Instance.new("TextButton")
+local BringButton = Instance.new("TextButton")
+local Flingall = Instance.new("TextButton")
+local Lagserver = Instance.new("TextButton")
+local Spec = Instance.new("TextBox")
+local SpecButton = Instance.new("TextButton")
+local flin = Instance.new("TextBox")
+local flingButton = Instance.new("TextButton")
+local tp = Instance.new("TextBox")
+local tpButton = Instance.new("TextButton")
+local tpButton1 = Instance.new("TextButton")
+local tp1 = Instance.new("TextBox")
+local CrashServerV2 = Instance.new("TextButton")
+local killplr = Instance.new("TextBox")
+local killplrButton = Instance.new("TextButton")
+local Yt = Instance.new("Frame")
+local Chan = Instance.new("TextLabel")
+local sub = Instance.new("TextLabel")
+local link = Instance.new("TextLabel")
+local Patched = Instance.new("ScrollingFrame")
+local Patch = Instance.new("TextButton")
+local Patch1 = Instance.new("TextButton")
+local Patch2 = Instance.new("TextButton")
+local Patch3 = Instance.new("TextButton")
+local Patch4 = Instance.new("TextButton")
+local Patch5 = Instance.new("TextButton")
+local Patch6 = Instance.new("TextButton")
+local Patch7 = Instance.new("TextButton")
+local Player_2 = Instance.new("ScrollingFrame")
+local Fixcam = Instance.new("TextButton")
+local WalkSpeedButton = Instance.new("TextButton")
+local WalkSp = Instance.new("TextBox")
+local JumpPowerButton = Instance.new("TextButton")
+local Jumpp = Instance.new("TextBox")
+local Clicktoteleport = Instance.new("TextButton")
+local Chat2 = Instance.new("TextButton")
+local Giant = Instance.new("TextButton")
+local Holdalltools = Instance.new("TextButton")
+local Xray = Instance.new("TextButton")
+local Getalltools = Instance.new("TextButton")
+local Houseeee = Instance.new("ScrollingFrame")
+local Rainbowhouse = Instance.new("TextButton")
+local SpamTextButton = Instance.new("TextButton")
+local SpamText = Instance.new("TextBox")
+local SpamWindow = Instance.new("TextButton")
+local SpamGarage = Instance.new("TextButton")
+local SpamDoor = Instance.new("TextButton")
+local Banall = Instance.new("TextButton")
+local UnBanall = Instance.new("TextButton")
+local Roomall = Instance.new("TextButton")
+local UnRoomall = Instance.new("TextButton")
+local Fs = Instance.new("ScrollingFrame")
+local Rainbow = Instance.new("TextButton")
+local Verybrigthlight = Instance.new("TextButton")
+local firehat = Instance.new("TextButton")
+local Sparklehat = Instance.new("TextButton")
+local Dominus1 = Instance.new("TextButton")
+local Dominus2 = Instance.new("TextButton")
+local Smokehat = Instance.new("TextButton")
+local Dominus3 = Instance.new("TextButton")
+local RandomClothes = Instance.new("TextButton")
+local RandomPants = Instance.new("TextButton")
+local RandomHairs = Instance.new("TextButton")
+local RandomFace = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local minimize = Instance.new("TextButton")
+local Chat2_2 = Instance.new("Frame")
+local Chatbutton = Instance.new("TextButton")
+local Texthere = Instance.new("TextBox")
+local X = Instance.new("TextButton")
+local Spectategu = Instance.new("Frame")
+local X_2 = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local PickingHouseColor = Instance.new("TextBox")
+
+--Properties:
+
+BrookHavenguiv6.Name = "BrookHaven gui v6"
+BrookHavenguiv6.Parent = game.CoreGui
+BrookHavenguiv6.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Drag.Name = "Drag"
+Drag.Parent = BrookHavenguiv6
+Drag.Active = true
+Drag.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Drag.BorderSizePixel = 0
+Drag.Draggable = true
+Drag.Position = UDim2.new(0.118749991, 0, 0.0531249978, 0)
+Drag.Size = UDim2.new(0, 380, 0, 30)
+Drag.Visible = false
+
+Close.Name = "Close"
+Close.Parent = Drag
+Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.921052635, 0, 0, 0)
+Close.Size = UDim2.new(0, 30, 0, 30)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+Close.MouseButton1Click:Connect(function()
+	Drag.Visible = false
+	Open.Visible = true
+end)
+
+Frame.Parent = Drag
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 1, 0)
+Frame.Size = UDim2.new(0, 380, 0, 220)
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.13636364, 0)
+ScrollingFrame.Size = UDim2.new(0, 80, 0, 190)
+ScrollingFrame.ScrollBarThickness = 0
+
+Home.Name = "Home"
+Home.Parent = ScrollingFrame
+Home.BackgroundColor3 = Color3.fromRGB(0, 28, 190)
+Home.BorderSizePixel = 0
+Home.Size = UDim2.new(0, 80, 0, 40)
+Home.Font = Enum.Font.SourceSans
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(0, 0, 0)
+Home.TextScaled = true
+Home.TextSize = 14.000
+Home.TextWrapped = true
+Home.MouseButton1Click:Connect(function()
+	Ho.Visible = true
+	Trollge.Visible = false
+	Patched.Visible = false
+	Yt.Visible = false
+	Player_2.Visible = false
+	Fs.Visible = false
+	Houseeee.Visible = false
+end)
+
+Trolling.Name = "Trolling"
+Trolling.Parent = ScrollingFrame
+Trolling.BackgroundColor3 = Color3.fromRGB(0, 28, 190)
+Trolling.BorderSizePixel = 0
+Trolling.Position = UDim2.new(0, 0, 0.0909090936, 0)
+Trolling.Size = UDim2.new(0, 80, 0, 40)
+Trolling.Font = Enum.Font.SourceSans
+Trolling.Text = "Trolling"
+Trolling.TextColor3 = Color3.fromRGB(0, 0, 0)
+Trolling.TextScaled = true
+Trolling.TextSize = 14.000
+Trolling.TextWrapped = true
+Trolling.MouseButton1Click:Connect(function()
+	Ho.Visible = false
+	Trollge.Visible = true
+	Patched.Visible = false
+	Yt.Visible = false
+	Player_2.Visible = false
+	Fs.Visible = false
+	Houseeee.Visible = false
+end)
+
+PatchednotWorkingScript.Name = "Patched/not Working Script"
+PatchednotWorkingScript.Parent = ScrollingFrame
+PatchednotWorkingScript.BackgroundColor3 = Color3.fromRGB(0, 28, 190)
+PatchednotWorkingScript.BorderSizePixel = 0
+PatchednotWorkingScript.Position = UDim2.new(0, 0, 0.181818187, 0)
+PatchednotWorkingScript.Size = UDim2.new(0, 80, 0, 40)
+PatchednotWorkingScript.Font = Enum.Font.SourceSans
+PatchednotWorkingScript.Text = "Patched/not work"
+PatchednotWorkingScript.TextColor3 = Color3.fromRGB(0, 0, 0)
+PatchednotWorkingScript.TextScaled = true
+PatchednotWorkingScript.TextSize = 14.000
+PatchednotWorkingScript.TextWrapped = true
+PatchednotWorkingScript.MouseButton1Click:Connect(function()
+	Ho.Visible = false
+	Trollge.Visible = false
+	Patched.Visible = true
+	Yt.Visible = false
+	Player_2.Visible = false
+	Fs.Visible = false
+	Houseeee.Visible = false
+end)
+
+Youtube.Name = "Youtube"
+Youtube.Parent = ScrollingFrame
+Youtube.BackgroundColor3 = Color3.fromRGB(0, 28, 190)
+Youtube.BorderSizePixel = 0
+Youtube.Position = UDim2.new(0, 0, 0.272727281, 0)
+Youtube.Size = UDim2.new(0, 80, 0, 40)
+Youtube.Font = Enum.Font.SourceSans
+Youtube.Text = "Youtube"
+Youtube.TextColor3 = Color3.fromRGB(0, 0, 0)
+Youtube.TextScaled = true
+Youtube.TextSize = 14.000
+Youtube.TextWrapped = true
+Youtube.MouseButton1Click:Connect(function()
+	Ho.Visible = false
+	Trollge.Visible = false
+	Patched.Visible = false
+	Yt.Visible = true
+	Player_2.Visible = false
+	Fs.Visible = false
+	Houseeee.Visible = false
+end)
+
+Player.Name = "Player"
+Player.Parent = ScrollingFrame
+Player.BackgroundColor3 = Color3.fromRGB(0, 28, 190)
+Player.BorderSizePixel = 0
+Player.Position = UDim2.new(0, 0, 0.363636374, 0)
+Player.Size = UDim2.new(0, 80, 0, 40)
+Player.Font = Enum.Font.SourceSans
+Player.Text = "Player"
+Player.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player.TextScaled = true
+Player.TextSize = 14.000
+Player.TextWrapped = true
+Player.MouseButton1Click:Connect(function()
+	Ho.Visible = false
+	Trollge.Visible = false
+	Patched.Visible = false
+	Yt.Visible = false
+	Player_2.Visible = true
+	Fs.Visible = false
+	Houseeee.Visible = false
+end)
+
+Removegui.Name = "Remove gui"
+Removegui.Parent = ScrollingFrame
+Removegui.BackgroundColor3 = Color3.fromRGB(190, 0, 0)
+Removegui.BorderSizePixel = 0
+Removegui.Position = UDim2.new(0, 0, 0.6340909, 0)
+Removegui.Size = UDim2.new(0, 80, 0, 40)
+Removegui.Font = Enum.Font.SourceSans
+Removegui.Text = "Remove gui"
+Removegui.TextColor3 = Color3.fromRGB(0, 0, 0)
+Removegui.TextScaled = true
+Removegui.TextSize = 14.000
+Removegui.TextWrapped = true
+Removegui.MouseButton1Click:Connect(function()
+	BrookHavenguiv6:Destroy()
+end)
+
+FunScripts.Name = "Fun Scripts"
+FunScripts.Parent = ScrollingFrame
+FunScripts.BackgroundColor3 = Color3.fromRGB(0, 28, 190)
+FunScripts.BorderSizePixel = 0
+FunScripts.Position = UDim2.new(0, 0, 0.543181837, 0)
+FunScripts.Size = UDim2.new(0, 80, 0, 40)
+FunScripts.Font = Enum.Font.SourceSans
+FunScripts.Text = "Fun Scripts"
+FunScripts.TextColor3 = Color3.fromRGB(0, 0, 0)
+FunScripts.TextScaled = true
+FunScripts.TextSize = 14.000
+FunScripts.TextWrapped = true
+FunScripts.MouseButton1Click:Connect(function()
+	Ho.Visible = false
+	Trollge.Visible = false
+	Patched.Visible = false
+	Yt.Visible = false
+	Player_2.Visible = false
+	Fs.Visible = true
+	Houseeee.Visible = false
+end)
+
+House.Name = "House"
+House.Parent = ScrollingFrame
+House.BackgroundColor3 = Color3.fromRGB(0, 28, 190)
+House.BorderSizePixel = 0
+House.Position = UDim2.new(0, 0, 0.454545468, 0)
+House.Size = UDim2.new(0, 80, 0, 40)
+House.Font = Enum.Font.SourceSans
+House.Text = "House"
+House.TextColor3 = Color3.fromRGB(0, 0, 0)
+House.TextScaled = true
+House.TextSize = 14.000
+House.TextWrapped = true
+House.MouseButton1Click:Connect(function()
+	Ho.Visible = false
+	Trollge.Visible = false
+	Patched.Visible = false
+	Yt.Visible = false
+	Player_2.Visible = false
+	Fs.Visible = false
+	Houseeee.Visible = true
+end)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 380, 0, 30)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Script Made By WarriorRoberr"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Ho.Name = "Ho"
+Ho.Parent = Frame
+Ho.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Ho.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ho.BorderSizePixel = 0
+Ho.Position = UDim2.new(0.210526317, 0, 0.13636364, 0)
+Ho.Size = UDim2.new(0, 300, 0, 190)
+
+Good.Name = "Good"
+Good.Parent = Ho
+Good.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Good.BorderSizePixel = 0
+Good.Size = UDim2.new(0, 300, 0, 56)
+Good.Font = Enum.Font.SourceSans
+Good.Text = "Thanks for using Brookhaven Gui V6 Pls Subscribe"
+Good.TextColor3 = Color3.fromRGB(255, 255, 255)
+Good.TextScaled = true
+Good.TextSize = 14.000
+Good.TextWrapped = true
+
+Name1.Name = "Name1"
+Name1.Parent = Ho
+Name1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Name1.BorderSizePixel = 0
+Name1.Position = UDim2.new(0, 0, 0.294736832, 0)
+Name1.Size = UDim2.new(0, 300, 0, 53)
+Name1.Font = Enum.Font.SourceSans
+Name1.Text = ""
+Name1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name1.TextScaled = true
+Name1.TextSize = 14.000
+Name1.TextWrapped = true
+pcall(function()
+	Name1.Text = game.Players:GetPlayerFromCharacter(game.Workspace.CurrentCamera.CameraSubject.Parent).Name
+end)
+
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = Ho
+Rejoin.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Rejoin.BorderSizePixel = 0
+Rejoin.Position = UDim2.new(0.166666672, 0, 0.736842096, 0)
+Rejoin.Size = UDim2.new(0, 200, 0, 50)
+Rejoin.Font = Enum.Font.SourceSans
+Rejoin.Text = "Rejoin"
+Rejoin.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rejoin.TextScaled = true
+Rejoin.TextSize = 14.000
+Rejoin.TextWrapped = true
+Rejoin.MouseButton1Click:Connect(function()
+	game:GetService("TeleportService"):Teleport(game.PlaceId)
+end)
+
+Spectategui.Name = "Spectate gui"
+Spectategui.Parent = Ho
+Spectategui.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Spectategui.BorderSizePixel = 0
+Spectategui.Position = UDim2.new(0.833333313, 0, 0.736842096, 0)
+Spectategui.Size = UDim2.new(0, 53, 0, 50)
+Spectategui.Font = Enum.Font.SourceSans
+Spectategui.Text = "Spectate gui"
+Spectategui.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spectategui.TextScaled = true
+Spectategui.TextSize = 14.000
+Spectategui.TextWrapped = true
+
+Trollge.Name = "Trollge"
+Trollge.Parent = Frame
+Trollge.Active = true
+Trollge.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Trollge.BorderSizePixel = 0
+Trollge.Position = UDim2.new(0.210999995, 0, 0.136000007, 0)
+Trollge.Size = UDim2.new(0, 300, 0, 190)
+Trollge.Visible = false
+Trollge.CanvasSize = UDim2.new(0, 0, 3, 0)
+Trollge.ScrollBarThickness = 0
+
+Roommatebuttonall.Name = "Roommate button all"
+Roommatebuttonall.Parent = Trollge
+Roommatebuttonall.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Roommatebuttonall.BorderSizePixel = 0
+Roommatebuttonall.Position = UDim2.new(0, 0, 0.907571673, 0)
+Roommatebuttonall.Size = UDim2.new(0, 200, 0, 50)
+Roommatebuttonall.Font = Enum.Font.SourceSans
+Roommatebuttonall.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Roommatebuttonall.PlaceholderText = "house # 1 to 24 only"
+Roommatebuttonall.Text = "#number"
+Roommatebuttonall.TextColor3 = Color3.fromRGB(255, 255, 255)
+Roommatebuttonall.TextScaled = true
+Roommatebuttonall.TextSize = 14.000
+Roommatebuttonall.TextWrapped = true
+
+Roommateall.Name = "Roommate all"
+Roommateall.Parent = Trollge
+Roommateall.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Roommateall.BorderSizePixel = 0
+Roommateall.Position = UDim2.new(0.670000017, 0, 0.906704664, 0)
+Roommateall.Size = UDim2.new(0, 99, 0, 50)
+Roommateall.Font = Enum.Font.SourceSans
+Roommateall.Text = "room all to house"
+Roommateall.TextColor3 = Color3.fromRGB(255, 255, 255)
+Roommateall.TextScaled = true
+Roommateall.TextSize = 14.000
+Roommateall.TextWrapped = true
+Roommateall.MouseButton1Click:Connect(function()
+	for i,Playys in pairs(game.Players:GetPlayers()) do
+		local PlayerTriggerEvent = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632Pla6yerTri3ggerEv2ent")
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = Roommatebuttonall.Text
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+	end
+end)
+
+Roomm.Name = "Roomm"
+Roomm.Parent = Trollge
+Roomm.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Roomm.BorderSizePixel = 0
+Roomm.Position = UDim2.new(4.65661287e-10, 0, 0.832393825, 0)
+Roomm.Size = UDim2.new(0, 299, 0, 50)
+Roomm.Font = Enum.Font.SourceSans
+Roomm.Text = "room me to all house"
+Roomm.TextColor3 = Color3.fromRGB(255, 255, 255)
+Roomm.TextScaled = true
+Roomm.TextSize = 14.000
+Roomm.TextWrapped = true
+Roomm.MouseButton1Click:Connect(function()
+	local PlayerTriggerEvent = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632Pla6yerTri3ggerEv2ent")
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 1
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+	
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 2
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 3
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 4
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 5
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 6
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 7
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 11
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 12
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 13
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 14
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 15
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 16
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 17
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 18
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 19
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 20
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 21
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 22
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 23
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+	local args = {
+		[1] = "GivePermissionLoopToServer",
+		[2] = game.Players.LocalPlayer,
+		[3] = 24
+	}
+
+	PlayerTriggerEvent:FireServer(unpack(args))
+
+end)
+
+Attach.Name = "Attach"
+Attach.Parent = Trollge
+Attach.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Attach.BorderSizePixel = 0
+Attach.Position = UDim2.new(-0.00333333202, 0, 0.375579178, 0)
+Attach.Size = UDim2.new(0, 203, 0, 50)
+Attach.Font = Enum.Font.SourceSans
+Attach.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Attach.PlaceholderText = "Player name here"
+Attach.Text = "Attach tools needed"
+Attach.TextColor3 = Color3.fromRGB(255, 255, 255)
+Attach.TextScaled = true
+Attach.TextSize = 14.000
+Attach.TextWrapped = true
+
+AttachButton.Name = "AttachButton"
+AttachButton.Parent = Trollge
+AttachButton.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+AttachButton.BorderSizePixel = 0
+AttachButton.Position = UDim2.new(0.673333347, 0, 0.377665639, 0)
+AttachButton.Size = UDim2.new(0, 97, 0, 50)
+AttachButton.Font = Enum.Font.SourceSans
+AttachButton.Text = "Attach"
+AttachButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AttachButton.TextScaled = true
+AttachButton.TextSize = 14.000
+AttachButton.TextWrapped = true
+AttachButton.MouseButton1Down:Connect(function()
+	local Target = gplr(Attach.Text)
+	if Target[1] then
+		Target = Target[1]
+		lp.Character.Humanoid:Clone().Parent = lp.Character
+		lp.Character.Humanoid:Destroy()
+		game.Workspace.CurrentCamera.CameraSubject = lp.Character.Head
+	end
+	wait()
+	for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+		if tools:IsA("Tool") then
+			tools.Parent = game.Players.LocalPlayer.Character
+		end
+		lp.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+		wait()
+		lp.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+	end
+end)
+
+Bring.Name = "Bring"
+Bring.Parent = Trollge
+Bring.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Bring.BorderSizePixel = 0
+Bring.Position = UDim2.new(-0.00333333341, 0, 0.0748215988, 0)
+Bring.Size = UDim2.new(0, 203, 0, 50)
+Bring.Font = Enum.Font.SourceSans
+Bring.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Bring.PlaceholderText = "Player name here"
+Bring.Text = "Bring tools needed"
+Bring.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bring.TextScaled = true
+Bring.TextSize = 14.000
+Bring.TextWrapped = true
+
+Bringall.Name = "Bring all"
+Bringall.Parent = Trollge
+Bringall.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Bringall.BorderSizePixel = 0
+Bringall.Size = UDim2.new(0, 299, 0, 50)
+Bringall.Font = Enum.Font.SourceSans
+Bringall.Text = "Bring all tools needed"
+Bringall.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bringall.TextScaled = true
+Bringall.TextSize = 14.000
+Bringall.TextWrapped = true
+Bringall.MouseButton1Down:Connect(function()
+	for i,Playys in pairs(game.Players:GetPlayers()) do
+		Playys.Character.HumanoidRootPart.CFrame = lp.Character.HumanoidRootPart.CFrame
+		lp.Character.Humanoid:Clone().Parent = lp.Character
+		lp.Character.Humanoid:Destroy()
+		game.Workspace.CurrentCamera.CameraSubject = lp.Character.Head
+	end
+	wait()
+	for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+		if tools:IsA("Tool") then
+			tools.Parent = game.Players.LocalPlayer.Character
+		end
+	end
+end)
+
+BringButton.Name = "BringButton"
+BringButton.Parent = Trollge
+BringButton.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+BringButton.BorderSizePixel = 0
+BringButton.Position = UDim2.new(0.676666677, 0, 0.0769080594, 0)
+BringButton.Size = UDim2.new(0, 97, 0, 50)
+BringButton.Font = Enum.Font.SourceSans
+BringButton.Text = "Bring"
+BringButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+BringButton.TextScaled = true
+BringButton.TextSize = 14.000
+BringButton.TextWrapped = true
+BringButton.MouseButton1Down:Connect(function()
+	local Target = gplr(Bring.Text)
+	if Target[1] then
+		Target = Target[1]
+		lp.Character.Humanoid:Clone().Parent = lp.Character
+		lp.Character.Humanoid:Destroy()
+		game.Workspace.CurrentCamera.CameraSubject = lp.Character.Head
+	end
+	wait()
+	for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+		if tools:IsA("Tool") then
+			tools.Parent = game.Players.LocalPlayer.Character
+		end
+		Target.Character.HumanoidRootPart.CFrame = lp.Character.HumanoidRootPart.CFrame
+		wait()
+		Target.Character.HumanoidRootPart.CFrame = lp.Character.HumanoidRootPart.CFrame
+	end
+end)
+
+Flingall.Name = "Fling all"
+Flingall.Parent = Trollge
+Flingall.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Flingall.BorderSizePixel = 0
+Flingall.Position = UDim2.new(0.00333333388, 0, 0.756636262, 0)
+Flingall.Size = UDim2.new(0, 299, 0, 50)
+Flingall.Font = Enum.Font.SourceSans
+Flingall.Text = "Fling all tools needed"
+Flingall.TextColor3 = Color3.fromRGB(255, 255, 255)
+Flingall.TextScaled = true
+Flingall.TextSize = 14.000
+Flingall.TextWrapped = true
+Flingall.MouseButton1Down:Connect(function()
+	local Thrust = Instance.new('BodyThrust', lp.Character.HumanoidRootPart)
+	Thrust.Force = Vector3.new(9999,9999,9999)
+	Thrust.Name = "flingForce"
+	wait(.5)
+	for i,Playys in pairs(game.Players:GetPlayers()) do
+		Playys.Character.HumanoidRootPart.CFrame = lp.Character.HumanoidRootPart.CFrame
+		lp.Character.Humanoid:Clone().Parent = lp.Character
+		lp.Character.Humanoid:Destroy()
+		game.Workspace.CurrentCamera.CameraSubject = lp.Character.Head
+	end
+	wait(1)
+	for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+		if tools:IsA("Tool") then
+			tools.Parent = game.Players.LocalPlayer.Character
+		end
+	end
+end)
+
+Lagserver.Name = "Lag server"
+Lagserver.Parent = Trollge
+Lagserver.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Lagserver.BorderSizePixel = 0
+Lagserver.Position = UDim2.new(-0.000333333388, 0, 0.606242359, 0)
+Lagserver.Size = UDim2.new(0, 299, 0, 50)
+Lagserver.Font = Enum.Font.SourceSans
+Lagserver.Text = "Lag Server"
+Lagserver.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lagserver.TextScaled = true
+Lagserver.TextSize = 14.000
+Lagserver.TextWrapped = true
+Lagserver.MouseButton1Click:Connect(function()
+	local Avatar = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632Up6dat3eAva2tar")
+	game:GetService('RunService').RenderStepped:connect(function()
+		local args = {
+			[1] = "wear",
+			[2] = 215718515
+		}
+
+		Avatar:FireServer(unpack(args))
+	end)
+end)
+
+Spec.Name = "Spec"
+Spec.Parent = Trollge
+Spec.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Spec.BorderSizePixel = 0
+Spec.Position = UDim2.new(0, 0, 0.150579184, 0)
+Spec.Size = UDim2.new(0, 203, 0, 50)
+Spec.Font = Enum.Font.SourceSans
+Spec.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Spec.PlaceholderText = "Player name here"
+Spec.Text = ""
+Spec.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spec.TextScaled = true
+Spec.TextSize = 14.000
+Spec.TextWrapped = true
+
+SpecButton.Name = "SpecButton"
+SpecButton.Parent = Trollge
+SpecButton.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+SpecButton.BorderSizePixel = 0
+SpecButton.Position = UDim2.new(0.673333347, 0, 0.152665645, 0)
+SpecButton.Size = UDim2.new(0, 97, 0, 50)
+SpecButton.Font = Enum.Font.SourceSans
+SpecButton.Text = "Spectate Off"
+SpecButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpecButton.TextScaled = true
+SpecButton.TextSize = 14.000
+SpecButton.TextWrapped = true
+function spectoggle()
+	if SpecButton.Text == "Spectate Off" then
+		SpecButton.Text = "Spectate On"
+		local Target = gplr(Spec.Text)
+		if Target[1] then
+			Target = Target[1]	
+			game.Workspace.CurrentCamera.CameraSubject = Target.Character.Humanoid
+		end
+	elseif SpecButton.Text == "Spectate On" then
+		SpecButton.Text = "Spectate Off"
+		game.Workspace.CurrentCamera.CameraSubject = lp.Character.Humanoid
+	end
+end
+SpecButton.MouseButton1Click:Connect(spectoggle)
+
+flin.Name = "flin"
+flin.Parent = Trollge
+flin.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+flin.BorderSizePixel = 0
+flin.Position = UDim2.new(-0.00333333202, 0, 0.221791297, 0)
+flin.Size = UDim2.new(0, 203, 0, 50)
+flin.Font = Enum.Font.SourceSans
+flin.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+flin.PlaceholderText = "Player name here"
+flin.Text = "Fling tools needed"
+flin.TextColor3 = Color3.fromRGB(255, 255, 255)
+flin.TextScaled = true
+flin.TextSize = 14.000
+flin.TextWrapped = true
+
+flingButton.Name = "flingButton"
+flingButton.Parent = Trollge
+flingButton.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+flingButton.BorderSizePixel = 0
+flingButton.Position = UDim2.new(0.676666677, 0, 0.223877758, 0)
+flingButton.Size = UDim2.new(0, 97, 0, 50)
+flingButton.Font = Enum.Font.SourceSans
+flingButton.Text = "Fling"
+flingButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+flingButton.TextScaled = true
+flingButton.TextSize = 14.000
+flingButton.TextWrapped = true
+flingButton.MouseButton1Down:Connect(function()
+	local Target = gplr(flin.Text)
+	if Target[1] then
+		Target = Target[1]
+		lp.Character.Humanoid:Clone().Parent = lp.Character
+		lp.Character.Humanoid:Destroy()
+		game.Workspace.CurrentCamera.CameraSubject = lp.Character.Head
+		for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+			if tools:IsA("Tool") then
+				tools.Parent = game.Players.LocalPlayer.Character
+			end
+		end
+		local Thrust = Instance.new('BodyThrust', lp.Character.HumanoidRootPart)
+		Thrust.Force = Vector3.new(9999,9999,9999)
+		Thrust.Name = "flingForce"
+		repeat
+			lp.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+			Thrust.Location = Target.Character.HumanoidRootPart.Position
+			game:FindService("RunService").Heartbeat:wait()
+		until not Target.Character:FindFirstChild("Head")
+	end
+end)
+
+tp.Name = "tp"
+tp.Parent = Trollge
+tp.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+tp.BorderSizePixel = 0
+tp.Position = UDim2.new(-0.00666666543, 0, 0.298306465, 0)
+tp.Size = UDim2.new(0, 203, 0, 50)
+tp.Font = Enum.Font.SourceSans
+tp.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+tp.PlaceholderText = "Player name here"
+tp.Text = ""
+tp.TextColor3 = Color3.fromRGB(255, 255, 255)
+tp.TextScaled = true
+tp.TextSize = 14.000
+tp.TextWrapped = true
+
+tpButton.Name = "tpButton"
+tpButton.Parent = Trollge
+tpButton.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+tpButton.BorderSizePixel = 0
+tpButton.Position = UDim2.new(0.676666677, 0, 0.300392896, 0)
+tpButton.Size = UDim2.new(0, 97, 0, 50)
+tpButton.Font = Enum.Font.SourceSans
+tpButton.Text = "Teleport"
+tpButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+tpButton.TextScaled = true
+tpButton.TextSize = 14.000
+tpButton.TextWrapped = true
+tpButton.MouseButton1Down:Connect(function()
+	local Target = gplr(tp.Text)
+	if Target[1] then
+		Target = Target[1]
+		lp.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+	end
+end)
+
+tpButton1.Name = "tpButton1"
+tpButton1.Parent = Trollge
+tpButton1.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+tpButton1.BorderSizePixel = 0
+tpButton1.Position = UDim2.new(0.686666667, 0, 0.453423202, 0)
+tpButton1.Size = UDim2.new(0, 97, 0, 50)
+tpButton1.Font = Enum.Font.SourceSans
+tpButton1.Text = "LoopTeleport Off"
+tpButton1.TextColor3 = Color3.fromRGB(255, 255, 255)
+tpButton1.TextScaled = true
+tpButton1.TextSize = 14.000
+tpButton1.TextWrapped = true
+tpButton1.MouseButton1Down:Connect(function()
+	local Target = gplr(tp1.Text)
+	if Target[1] then
+		Target = Target[1]
+		if toggle1 then
+			toggle1 = false
+			tpButton1.Text = "LoopTeleport Off"
+		else
+			toggle1 = true
+			tpButton1.Text = "LoopTeleport On"
+		end
+		while true do
+			wait()
+			if toggle1 then
+				lp.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+			end	
+		end	
+	end
+end)
+
+tp1.Name = "tp1"
+tp1.Parent = Trollge
+tp1.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+tp1.BorderSizePixel = 0
+tp1.Position = UDim2.new(0.00333333574, 0, 0.451336741, 0)
+tp1.Size = UDim2.new(0, 203, 0, 50)
+tp1.Font = Enum.Font.SourceSans
+tp1.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+tp1.PlaceholderText = "Player name here"
+tp1.Text = ""
+tp1.TextColor3 = Color3.fromRGB(255, 255, 255)
+tp1.TextScaled = true
+tp1.TextSize = 14.000
+tp1.TextWrapped = true
+
+CrashServerV2.Name = "Crash Server V2"
+CrashServerV2.Parent = Trollge
+CrashServerV2.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+CrashServerV2.BorderSizePixel = 0
+CrashServerV2.Position = UDim2.new(0.00300000049, 0, 0.680484772, 0)
+CrashServerV2.Size = UDim2.new(0, 299, 0, 50)
+CrashServerV2.Font = Enum.Font.SourceSans
+CrashServerV2.Text = "Crash Server V2"
+CrashServerV2.TextColor3 = Color3.fromRGB(255, 255, 255)
+CrashServerV2.TextScaled = true
+CrashServerV2.TextSize = 14.000
+CrashServerV2.TextWrapped = true
+CrashServerV2.MouseButton1Click:Connect(function()
+	while true do
+		wait()
+		while true do
+			wait()
+			while true do
+				wait()
+				while true do
+					wait()
+					while true do
+						wait()
+						local Avatar = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632Up6dat3eAva2tar")
+						local args = {
+							[1] = "wear",
+							[2] = 215718515
+						}
+
+						Avatar:FireServer(unpack(args))
+
+						local args = {
+							[1] = "wear",
+							[2] = 173624561
+						}
+
+						Avatar:FireServer(unpack(args))
+					end
+				end
+			end
+		end
+	end
+end)
+
+killplr.Name = "killplr"
+killplr.Parent = Trollge
+killplr.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+killplr.BorderSizePixel = 0
+killplr.Position = UDim2.new(2.32830644e-09, 0, 0.527094305, 0)
+killplr.Size = UDim2.new(0, 203, 0, 50)
+killplr.Font = Enum.Font.SourceSans
+killplr.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+killplr.PlaceholderText = "Player name here"
+killplr.Text = "voidplr Tools needed"
+killplr.TextColor3 = Color3.fromRGB(255, 255, 255)
+killplr.TextScaled = true
+killplr.TextSize = 14.000
+killplr.TextWrapped = true
+
+killplrButton.Name = "killplrButton"
+killplrButton.Parent = Trollge
+killplrButton.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+killplrButton.BorderSizePixel = 0
+killplrButton.Position = UDim2.new(0.683333337, 0, 0.529180765, 0)
+killplrButton.Size = UDim2.new(0, 97, 0, 50)
+killplrButton.Font = Enum.Font.SourceSans
+killplrButton.Text = "voidplr"
+killplrButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+killplrButton.TextScaled = true
+killplrButton.TextSize = 14.000
+killplrButton.TextWrapped = true
+killplrButton.MouseButton1Click:Connect(function()
+	local Target = gplr(killplr.Text)
+	if Target[1] then
+		Target = Target[1]
+		lp.Character.Humanoid:Clone().Parent = lp.Character
+		lp.Character.Humanoid:Destroy()
+		game.Workspace.CurrentCamera.CameraSubject = lp.Character.Head
+		wait()
+		for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+			if tools:IsA("Tool") then
+				tools.Parent = game.Players.LocalPlayer.Character
+			end
+			Target.Character.HumanoidRootPart.CFrame = lp.Character.HumanoidRootPart.CFrame
+			wait()
+			Target.Character.HumanoidRootPart.CFrame = lp.Character.HumanoidRootPart.CFrame
+			lp.Character.HumanoidRootPart.CFrame = CFrame.new(-10000000,10000000000,-10000000)
+		end
+	end
+end)
+Yt.Name = "Yt"
+Yt.Parent = Frame
+Yt.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Yt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Yt.BorderSizePixel = 0
+Yt.Position = UDim2.new(0.210526317, 0, 0.13636364, 0)
+Yt.Size = UDim2.new(0, 300, 0, 190)
+Yt.Visible = false
+
+Chan.Name = "Chan"
+Chan.Parent = Yt
+Chan.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Chan.BorderSizePixel = 0
+Chan.Size = UDim2.new(0, 300, 0, 56)
+Chan.Font = Enum.Font.SourceSans
+Chan.Text = "Channel: WarriorRoberr"
+Chan.TextColor3 = Color3.fromRGB(255, 255, 255)
+Chan.TextScaled = true
+Chan.TextSize = 14.000
+Chan.TextWrapped = true
+
+sub.Name = "sub"
+sub.Parent = Yt
+sub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+sub.BorderSizePixel = 0
+sub.Position = UDim2.new(0, 0, 0.484210551, 0)
+sub.Size = UDim2.new(0, 300, 0, 38)
+sub.Font = Enum.Font.SourceSans
+sub.Text = "Subscribe me"
+sub.TextColor3 = Color3.fromRGB(255, 255, 255)
+sub.TextScaled = true
+sub.TextSize = 14.000
+sub.TextWrapped = true
+
+link.Name = "link"
+link.Parent = Yt
+link.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+link.BorderSizePixel = 0
+link.Position = UDim2.new(0, 0, 0.294736832, 0)
+link.Size = UDim2.new(0, 300, 0, 36)
+link.Font = Enum.Font.SourceSans
+link.Text = "Link: https://Youtube.com/c/Warriorroberr"
+link.TextColor3 = Color3.fromRGB(255, 255, 255)
+link.TextScaled = true
+link.TextSize = 14.000
+link.TextWrapped = true
+
+Patched.Name = "Patched"
+Patched.Parent = Frame
+Patched.Active = true
+Patched.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Patched.BorderSizePixel = 0
+Patched.Position = UDim2.new(0.210999995, 0, 0.136000007, 0)
+Patched.Size = UDim2.new(0, 300, 0, 190)
+Patched.Visible = false
+Patched.ScrollBarThickness = 0
+
+Patch.Name = "Patch"
+Patch.Parent = Patched
+Patch.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Patch.BorderSizePixel = 0
+Patch.Size = UDim2.new(0, 299, 0, 50)
+Patch.Font = Enum.Font.SourceSans
+Patch.Text = "Kill all (Patched)"
+Patch.TextColor3 = Color3.fromRGB(255, 255, 255)
+Patch.TextScaled = true
+Patch.TextSize = 14.000
+Patch.TextWrapped = true
+
+Patch1.Name = "Patch1"
+Patch1.Parent = Patched
+Patch1.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Patch1.BorderSizePixel = 0
+Patch1.Position = UDim2.new(0, 0, 0.111363634, 0)
+Patch1.Size = UDim2.new(0, 299, 0, 50)
+Patch1.Font = Enum.Font.SourceSans
+Patch1.Text = "jump all (Patched)"
+Patch1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Patch1.TextScaled = true
+Patch1.TextSize = 14.000
+Patch1.TextWrapped = true
+
+Patch2.Name = "Patch2"
+Patch2.Parent = Patched
+Patch2.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Patch2.BorderSizePixel = 0
+Patch2.Position = UDim2.new(-0.00333333341, 0, 0.224999994, 0)
+Patch2.Size = UDim2.new(0, 299, 0, 50)
+Patch2.Font = Enum.Font.SourceSans
+Patch2.Text = "scare all (Patched)"
+Patch2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Patch2.TextScaled = true
+Patch2.TextSize = 14.000
+Patch2.TextWrapped = true
+
+Patch3.Name = "Patch3"
+Patch3.Parent = Patched
+Patch3.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Patch3.BorderSizePixel = 0
+Patch3.Position = UDim2.new(0.00333333341, 0, 0.338636369, 0)
+Patch3.Size = UDim2.new(0, 299, 0, 50)
+Patch3.Font = Enum.Font.SourceSans
+Patch3.Text = "crash server (Patched)"
+Patch3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Patch3.TextScaled = true
+Patch3.TextSize = 14.000
+Patch3.TextWrapped = true
+
+Patch4.Name = "Patch4"
+Patch4.Parent = Patched
+Patch4.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Patch4.BorderSizePixel = 0
+Patch4.Position = UDim2.new(0.00333333341, 0, 0.452272743, 0)
+Patch4.Size = UDim2.new(0, 299, 0, 50)
+Patch4.Font = Enum.Font.SourceSans
+Patch4.Text = "get all house  (Patched)"
+Patch4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Patch4.TextScaled = true
+Patch4.TextSize = 14.000
+Patch4.TextWrapped = true
+
+Patch5.Name = "Patch5"
+Patch5.Parent = Patched
+Patch5.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Patch5.BorderSizePixel = 0
+Patch5.Position = UDim2.new(0.00333333341, 0, 0.565909088, 0)
+Patch5.Size = UDim2.new(0, 299, 0, 50)
+Patch5.Font = Enum.Font.SourceSans
+Patch5.Text = "job script  (Patched)"
+Patch5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Patch5.TextScaled = true
+Patch5.TextSize = 14.000
+Patch5.TextWrapped = true
+
+Patch6.Name = "Patch6"
+Patch6.Parent = Patched
+Patch6.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Patch6.BorderSizePixel = 0
+Patch6.Position = UDim2.new(0.00333333341, 0, 0.565909088, 0)
+Patch6.Size = UDim2.new(0, 299, 0, 50)
+Patch6.Font = Enum.Font.SourceSans
+Patch6.Text = "job script  (Patched)"
+Patch6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Patch6.TextScaled = true
+Patch6.TextSize = 14.000
+Patch6.TextWrapped = true
+
+Patch7.Name = "Patch7"
+Patch7.Parent = Patched
+Patch7.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Patch7.BorderSizePixel = 0
+Patch7.Position = UDim2.new(0, 0, 0.679545462, 0)
+Patch7.Size = UDim2.new(0, 299, 0, 50)
+Patch7.Font = Enum.Font.SourceSans
+Patch7.Text = "Decal gui  (Patched)"
+Patch7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Patch7.TextScaled = true
+Patch7.TextSize = 14.000
+Patch7.TextWrapped = true
+
+Player_2.Name = "Player"
+Player_2.Parent = Frame
+Player_2.Active = true
+Player_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Player_2.BorderSizePixel = 0
+Player_2.Position = UDim2.new(0.210999995, 0, 0.136000007, 0)
+Player_2.Size = UDim2.new(0, 300, 0, 190)
+Player_2.Visible = false
+Player_2.ScrollBarThickness = 0
+
+Fixcam.Name = "Fixcam"
+Fixcam.Parent = Player_2
+Fixcam.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Fixcam.BorderSizePixel = 0
+Fixcam.Size = UDim2.new(0, 299, 0, 50)
+Fixcam.Font = Enum.Font.SourceSans
+Fixcam.Text = "Fixcam"
+Fixcam.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fixcam.TextScaled = true
+Fixcam.TextSize = 14.000
+Fixcam.TextWrapped = true
+Fixcam.MouseButton1Click:Connect(function()
+	game.Workspace.CurrentCamera:Destroy()
+	wait()
+	game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+	wait()
+	game.Workspace.CurrentCamera.CameraType = "Custom"
+end)
+
+WalkSpeedButton.Name = "WalkSpeedButton"
+WalkSpeedButton.Parent = Player_2
+WalkSpeedButton.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+WalkSpeedButton.BorderSizePixel = 0
+WalkSpeedButton.Position = UDim2.new(0.75999999, 0, 0.110167444, 0)
+WalkSpeedButton.Size = UDim2.new(0, 72, 0, 50)
+WalkSpeedButton.Font = Enum.Font.SourceSans
+WalkSpeedButton.Text = "Set"
+WalkSpeedButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeedButton.TextScaled = true
+WalkSpeedButton.TextSize = 14.000
+WalkSpeedButton.TextWrapped = true
+WalkSpeedButton.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = WalkSp.Text
+end)
+
+WalkSp.Name = "WalkSp"
+WalkSp.Parent = Player_2
+WalkSp.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+WalkSp.Position = UDim2.new(0, 0, 0.109449759, 0)
+WalkSp.Size = UDim2.new(0, 228, 0, 50)
+WalkSp.Font = Enum.Font.SourceSans
+WalkSp.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+WalkSp.PlaceholderText = "WalkSpeed:"
+WalkSp.Text = "Number here"
+WalkSp.TextColor3 = Color3.fromRGB(255, 255, 255)
+WalkSp.TextScaled = true
+WalkSp.TextSize = 14.000
+WalkSp.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+WalkSp.TextWrapped = true
+
+JumpPowerButton.Name = "JumpPowerButton"
+JumpPowerButton.Parent = Player_2
+JumpPowerButton.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+JumpPowerButton.BorderSizePixel = 0
+JumpPowerButton.Position = UDim2.new(0.75666666, 0, 0.223803818, 0)
+JumpPowerButton.Size = UDim2.new(0, 72, 0, 50)
+JumpPowerButton.Font = Enum.Font.SourceSans
+JumpPowerButton.Text = "Set"
+JumpPowerButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpPowerButton.TextScaled = true
+JumpPowerButton.TextSize = 14.000
+JumpPowerButton.TextWrapped = true
+JumpPowerButton.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = Jumpp.Text
+end)
+
+Jumpp.Name = "Jumpp"
+Jumpp.Parent = Player_2
+Jumpp.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Jumpp.Position = UDim2.new(-0.00333333341, 0, 0.223086119, 0)
+Jumpp.Size = UDim2.new(0, 228, 0, 50)
+Jumpp.Font = Enum.Font.SourceSans
+Jumpp.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Jumpp.PlaceholderText = "JumpPower:"
+Jumpp.Text = "Number here"
+Jumpp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jumpp.TextScaled = true
+Jumpp.TextSize = 14.000
+Jumpp.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Jumpp.TextWrapped = true
+
+Clicktoteleport.Name = "Click to teleport"
+Clicktoteleport.Parent = Player_2
+Clicktoteleport.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Clicktoteleport.BorderSizePixel = 0
+Clicktoteleport.Position = UDim2.new(0.00300000003, 0, 0.335999995, 0)
+Clicktoteleport.Size = UDim2.new(0, 299, 0, 50)
+Clicktoteleport.Font = Enum.Font.SourceSans
+Clicktoteleport.Text = "Click to teleport"
+Clicktoteleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clicktoteleport.TextScaled = true
+Clicktoteleport.TextSize = 14.000
+Clicktoteleport.TextWrapped = true
+Clicktoteleport.MouseButton1Down:Connect(function()
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	local tool = Instance.new("Tool")
+	tool.RequiresHandle = false
+	tool.Name = "Click Teleport"
+	tool.Activated:connect(function()
+		local pos = mouse.Hit+Vector3.new(0,2.5,0)
+		pos = CFrame.new(pos.X,pos.Y,pos.Z)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+	end)
+	tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+Chat2.Name = "Chat 2"
+Chat2.Parent = Player_2
+Chat2.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Chat2.BorderSizePixel = 0
+Chat2.Position = UDim2.new(0.00300000003, 0, 0.449999988, 0)
+Chat2.Size = UDim2.new(0, 299, 0, 50)
+Chat2.Font = Enum.Font.SourceSans
+Chat2.Text = "Chat 2 (Roblox will cant detect your chat)"
+Chat2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Chat2.TextScaled = true
+Chat2.TextSize = 14.000
+Chat2.TextWrapped = true
+
+Giant.Name = "Giant"
+Giant.Parent = Player_2
+Giant.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Giant.BorderSizePixel = 0
+Giant.Position = UDim2.new(0.00300000003, 0, 0.56400001, 0)
+Giant.Size = UDim2.new(0, 299, 0, 50)
+Giant.Font = Enum.Font.SourceSans
+Giant.Text = "Giant"
+Giant.TextColor3 = Color3.fromRGB(255, 255, 255)
+Giant.TextScaled = true
+Giant.TextSize = 14.000
+Giant.TextWrapped = true
+Giant.MouseButton1Down:Connect(function()
+	local LocalPlayer = game:GetService("Players").LocalPlayer
+	local Character = LocalPlayer.Character
+	local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+	local function rm()
+		for i,v in pairs(Character:GetDescendants()) do
+			if v:IsA("BasePart") then
+				if v.Name == "Handle" or v.Name == "Head" then
+					if Character.Head:FindFirstChild("OriginalSize") then
+						Character.Head.OriginalSize:Destroy()
+					end
+				else
+					for i,cav in pairs(v:GetDescendants()) do
+						if cav:IsA("Attachment") then
+							if cav:FindFirstChild("OriginalPosition") then
+								cav.OriginalPosition:Destroy()  
+							end
+						end
+					end
+					v:FindFirstChild("OriginalSize"):Destroy()
+					if v:FindFirstChild("AvatarPartScaleType") then
+						v:FindFirstChild("AvatarPartScaleType"):Destroy()
+					end
+				end
+			end
+		end
+	end
+
+	rm()
+	wait(0.5)
+	Humanoid:FindFirstChild("BodyProportionScale"):Destroy()
+	wait(1)
+
+	rm()
+	wait(0.5)
+	Humanoid:FindFirstChild("BodyHeightScale"):Destroy()
+	wait(1)
+
+	rm()
+	wait(0.5)
+	Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
+	wait(1)
+
+	rm()
+	wait(0.5)
+	Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
+	wait(1)
+
+	rm()
+	wait(0.5)
+	Humanoid:FindFirstChild("HeadScale"):Destroy()
+	wait(1)
+end)
+
+Holdalltools.Name = "Holdalltools"
+Holdalltools.Parent = Player_2
+Holdalltools.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Holdalltools.BorderSizePixel = 0
+Holdalltools.Position = UDim2.new(0.00300000003, 0, 0.676999986, 0)
+Holdalltools.Size = UDim2.new(0, 299, 0, 50)
+Holdalltools.Font = Enum.Font.SourceSans
+Holdalltools.Text = "Hold all tools"
+Holdalltools.TextColor3 = Color3.fromRGB(255, 255, 255)
+Holdalltools.TextScaled = true
+Holdalltools.TextSize = 14.000
+Holdalltools.TextWrapped = true
+Holdalltools.MouseButton1Down:Connect(function()
+	for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+		if tools:IsA("Tool") then
+			tools.Parent = game.Players.LocalPlayer.Character
+		end
+	end
+end)
+
+Xray.Name = "X-ray"
+Xray.Parent = Player_2
+Xray.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Xray.BorderSizePixel = 0
+Xray.Position = UDim2.new(0.00300000003, 0, 0.788999975, 0)
+Xray.Size = UDim2.new(0, 300, 0, 46)
+Xray.Font = Enum.Font.SourceSans
+Xray.Text = "X-ray Off"
+Xray.TextColor3 = Color3.fromRGB(255, 255, 255)
+Xray.TextScaled = true
+Xray.TextSize = 14.000
+Xray.TextWrapped = true
+function ToggleX()
+	if Xray.Text == "X-ray Off" then
+		Xray.Text = "X-ray On"
+		for i,Partss in pairs(workspace:GetDescendants()) do
+			if Partss:IsA("BasePart") then
+				Partss.Transparency = .7
+			end
+		end
+	elseif Xray.Text == "X-ray On" then
+		Xray.Text = "X-ray Off"
+		for i,Partss in pairs(workspace:GetDescendants()) do
+			if Partss:IsA("BasePart") then
+				Partss.Transparency = 0
+			end
+		end
+	end
+end
+Xray.MouseButton1Click:Connect(ToggleX)
+
+Getalltools.Name = "Get all tools"
+Getalltools.Parent = Player_2
+Getalltools.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Getalltools.BorderSizePixel = 0
+Getalltools.Position = UDim2.new(0.00300000003, 0, 0.893999994, 0)
+Getalltools.Size = UDim2.new(0, 300, 0, 46)
+Getalltools.Font = Enum.Font.SourceSans
+Getalltools.Text = "Get all tools one click only"
+Getalltools.TextColor3 = Color3.fromRGB(255, 255, 255)
+Getalltools.TextScaled = true
+Getalltools.TextSize = 14.000
+Getalltools.TextWrapped = true
+Getalltools.MouseButton1Click:Connect(function()
+	local Tools = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632T6o3o2l")
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Iphone"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Ipad"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Camcorder"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Laptop"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "ShoppingCart"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Paperbag"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Sign"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Book"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Envelope"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Paper"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "ClipBoard"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Ticket"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Licence"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "BabyBoy"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "BabyGirl"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "BabyBottle"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Stroller"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "BabyHippo"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "BabyMonkey"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Wagon"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Stretcher"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Stethoscope"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Syringe"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "SyringeZ"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Ear"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Toothbrush"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Hairbrush"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Trophy"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "CarryOn"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "PlaneTicket"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Ticket"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "SWATShield"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Cuffs"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Taser"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Glock"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "GlockBrown"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Shotgun"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Assault"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Sniper"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Bomb"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "DuffleBag"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "DuffleBagMoney"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Money"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "CreditCardBoy"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "CreditCardGirl"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Binocks"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "HandRadio"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "GhostMeter"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "FlashLight"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Tent"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Marshmello"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "SleepingBag"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Umbrella"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Balloon"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Present"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Roses"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Microphone"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Guitar"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "ElectricGuitar"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Axe"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Hammer"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Wrench"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "FireX"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Cones"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Ladder"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "LawnMower"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Shovel"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Bucket"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "WateringCan"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Box"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Vacuum"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Mop"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "SoccerBall"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "BasketBall"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Weights"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "FoodTray"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "TakeOut"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "TakeOutHappyBurger"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "TakeOutPizza"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "BreakfestPlate1"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "BurgerTray"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "FoodTray"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "LunchPlate1"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "DinnerPlate1"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "DinnerPlate2"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Apple"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Banana"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "AppleGreen"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Popcorn"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Chips"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Hamburger"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "HotDog"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Burrito"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Taco"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Sandwich"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Guda"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Pizza"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Pretzel"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Waffle"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "MuffinBlueBerry"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "YummyBread"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "CakePink"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Donut"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "CookieChip"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Reeses"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Hershey"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Icecream"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "FrapMint"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "FrapStrawberry"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "ShakeChocolate"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Mocha"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Milk"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "BottledWater"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Bloxaide"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+	local args = {
+		[1] = "PickingTools",
+		[2] = "Coke"
+	}
+
+	Tools:InvokeServer(unpack(args))
+
+end)
+
+Houseeee.Name = "Houseeee"
+Houseeee.Parent = Frame
+Houseeee.Active = true
+Houseeee.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Houseeee.BorderSizePixel = 0
+Houseeee.Position = UDim2.new(0.210999995, 0, 0.136000007, 0)
+Houseeee.Size = UDim2.new(0, 300, 0, 190)
+Houseeee.Visible = false
+Houseeee.ScrollBarThickness = 0
+
+Rainbowhouse.Name = "Rainbow house"
+Rainbowhouse.Parent = Houseeee
+Rainbowhouse.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Rainbowhouse.Size = UDim2.new(0, 299, 0, 50)
+Rainbowhouse.Font = Enum.Font.SourceSans
+Rainbowhouse.Text = "rainbow house Off"
+Rainbowhouse.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rainbowhouse.TextScaled = true
+Rainbowhouse.TextSize = 14.000
+Rainbowhouse.TextWrapped = true
+Rainbowhouse.MouseButton1Click:Connect(function()
+	if toggle2 then
+		toggle2 = false
+		Rainbowhouse.Text = "rainbow house Off"
+	else
+		toggle2 = true
+		Rainbowhouse.Text = "rainbow house On"
+	end
+	while true do
+		wait()
+		if toggle2 then
+			local args = {
+				[1] = PickingHouseColor.Text,
+				[2] = Color3.new(0,0,0)
+			}
+
+			game:GetService("ReplicatedStorage").RemoteEvents.PlayersHouse:FireServer(unpack(args))
+			wait(.1)
+			local args = {
+				[1] = PickingHouseColor.Text,
+				[2] = Color3.new(5,0,0)
+			}
+
+			game:GetService("ReplicatedStorage").RemoteEvents.PlayersHouse:FireServer(unpack(args))
+			wait(.1)
+			local args = {
+				[1] = PickingHouseColor.Text,
+				[2] = Color3.new(0,5,0)
+			}
+
+			game:GetService("ReplicatedStorage").RemoteEvents.PlayersHouse:FireServer(unpack(args))
+			wait(.1)
+			local args = {
+				[1] = PickingHouseColor.Text,
+				[2] = Color3.new(0,0,5)
+			}
+
+			game:GetService("ReplicatedStorage").RemoteEvents.PlayersHouse:FireServer(unpack(args))
+			wait(.1)
+			local args = {
+				[1] = PickingHouseColor.Text,
+				[2] = Color3.new(5,0,5)
+			}
+
+			game:GetService("ReplicatedStorage").RemoteEvents.PlayersHouse:FireServer(unpack(args))
+			wait(.1)
+			local args = {
+				[1] = PickingHouseColor.Text,
+				[2] = Color3.new(0,5,5)
+			}
+
+			game:GetService("ReplicatedStorage").RemoteEvents.PlayersHouse:FireServer(unpack(args))
+			wait(.1)
+			local args = {
+				[1] = PickingHouseColor.Text,
+				[2] = Color3.new(5,5,0)
+			}
+
+			game:GetService("ReplicatedStorage").RemoteEvents.PlayersHouse:FireServer(unpack(args))
+			wait(.1)
+			local args = {
+				[1] = PickingHouseColor.Text,
+				[2] = Color3.new(5,5,5)
+			}
+
+			game:GetService("ReplicatedStorage").RemoteEvents.PlayersHouse:FireServer(unpack(args))
+		end
+	end
+end)
+
+SpamTextButton.Name = "Spam Text Button"
+SpamTextButton.Parent = Houseeee
+SpamTextButton.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+SpamTextButton.Position = UDim2.new(0.673333347, 0, 0.114712909, 0)
+SpamTextButton.Size = UDim2.new(0, 99, 0, 50)
+SpamTextButton.Font = Enum.Font.SourceSans
+SpamTextButton.Text = "Spam Text Off"
+SpamTextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpamTextButton.TextScaled = true
+SpamTextButton.TextSize = 14.000
+SpamTextButton.TextWrapped = true
+SpamTextButton.MouseButton1Click:Connect(function()
+	if toggle3 then
+		toggle3 = false
+		SpamTextButton.Text = "Spam Text Off"
+	else
+		toggle3 = true
+		SpamTextButton.Text = "Spam Text On"
+	end
+	while wait() do
+		if toggle3 then
+	local args = {
+		[1] = "BusinessName",
+		[2] = SpamText.Text
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.RPHouseEvent:FireServer(unpack(args))
+		end
+	end
+end)
+
+SpamText.Name = "Spam Text"
+SpamText.Parent = Houseeee
+SpamText.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SpamText.Position = UDim2.new(0.00666666683, 0, 0.113636367, 0)
+SpamText.Size = UDim2.new(0, 200, 0, 50)
+SpamText.Font = Enum.Font.SourceSans
+SpamText.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+SpamText.PlaceholderText = "Text Here"
+SpamText.Text = ""
+SpamText.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpamText.TextScaled = true
+SpamText.TextSize = 14.000
+SpamText.TextWrapped = true
+
+SpamWindow.Name = "Spam Window"
+SpamWindow.Parent = Houseeee
+SpamWindow.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+SpamWindow.Position = UDim2.new(-0.00333333341, 0, 0.227272734, 0)
+SpamWindow.Size = UDim2.new(0, 299, 0, 50)
+SpamWindow.Font = Enum.Font.SourceSans
+SpamWindow.Text = "Spam Window Off"
+SpamWindow.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpamWindow.TextScaled = true
+SpamWindow.TextSize = 14.000
+SpamWindow.TextWrapped = true
+SpamWindow.MouseButton1Click:Connect(function()
+	if toggle4 then
+		toggle4 = false
+		SpamWindow.Text = "Spam Window Off"
+	else
+		toggle4 = true
+		SpamWindow.Text = "Spam Window On"
+	end
+	while wait() do
+		if toggle4 then
+			local args = {
+				[1] = "Curtains"
+			}
+
+			game:GetService("ReplicatedStorage").RemoteEvents.PlayersHouse:FireServer(unpack(args))
+
+		end
+	end
+end)
+
+SpamGarage.Name = "Spam Garage"
+SpamGarage.Parent = Houseeee
+SpamGarage.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+SpamGarage.Position = UDim2.new(-0.00333333341, 0, 0.340909094, 0)
+SpamGarage.Size = UDim2.new(0, 299, 0, 50)
+SpamGarage.Font = Enum.Font.SourceSans
+SpamGarage.Text = "Spam Garage Off"
+SpamGarage.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpamGarage.TextScaled = true
+SpamGarage.TextSize = 14.000
+SpamGarage.TextWrapped = true
+SpamGarage.MouseButton1Click:Connect(function()
+	if toggle5 then
+		toggle5 = false
+		SpamGarage.Text = "Spam Garage Off"
+	else
+		toggle5 = true
+		SpamGarage.Text = "Spam Garage On"
+	end
+	while wait() do
+		if toggle5 then
+			local args = {
+				[1] = "GarageDoor"
+			}
+
+			game:GetService("ReplicatedStorage").RemoteEvents.PlayersHouse:FireServer(unpack(args))
+
+		end
+	end
+end)
+
+SpamDoor.Name = "Spam Door"
+SpamDoor.Parent = Houseeee
+SpamDoor.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+SpamDoor.Position = UDim2.new(-0.00333333341, 0, 0.454545468, 0)
+SpamDoor.Size = UDim2.new(0, 299, 0, 50)
+SpamDoor.Font = Enum.Font.SourceSans
+SpamDoor.Text = "Spam Door Off"
+SpamDoor.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpamDoor.TextScaled = true
+SpamDoor.TextSize = 14.000
+SpamDoor.TextWrapped = true
+SpamDoor.MouseButton1Click:Connect(function()
+	if toggle6 then
+		toggle6 = false
+		SpamDoor.Text = "Spam Door Off"
+	else
+		toggle6 = true
+		SpamDoor.Text = "Spam Door On"
+	end
+	while wait() do
+		if toggle6 then
+			local args = {
+				[1] = "LockDoors"
+			}
+
+			game:GetService("ReplicatedStorage").RemoteEvents.PlayersHouse:FireServer(unpack(args))
+
+		end
+	end
+end)
+
+Banall.Name = "Ban all"
+Banall.Parent = Houseeee
+Banall.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Banall.Position = UDim2.new(-0.00333333341, 0, 0.565909147, 0)
+Banall.Size = UDim2.new(0, 299, 0, 50)
+Banall.Font = Enum.Font.SourceSans
+Banall.Text = "Ban all"
+Banall.TextColor3 = Color3.fromRGB(255, 255, 255)
+Banall.TextScaled = true
+Banall.TextSize = 14.000
+Banall.TextWrapped = true
+Banall.MouseButton1Click:Connect(function()
+	for i,Playys in pairs(game.Players:GetPlayers()) do
+	local args = {
+		[1] = "BanPlayerFromHouse",
+		[2] = Playys,
+		[3] = Playys.Character
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632Pla6yerTri3ggerEv2ent"):FireServer(unpack(args))
+	end
+end)
+
+UnBanall.Name = "UnBan all"
+UnBanall.Parent = Houseeee
+UnBanall.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+UnBanall.Position = UDim2.new(-0.00333333341, 0, 0.679545522, 0)
+UnBanall.Size = UDim2.new(0, 299, 0, 50)
+UnBanall.Font = Enum.Font.SourceSans
+UnBanall.Text = "UnBan all"
+UnBanall.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnBanall.TextScaled = true
+UnBanall.TextSize = 14.000
+UnBanall.TextWrapped = true
+UnBanall.MouseButton1Click:Connect(function()
+	for i,Playys in pairs(game.Players:GetPlayers()) do
+		local args = {
+			[1] = "UnBanPlayerFromHouse",
+			[2] = Playys,
+			[3] = Playys.Character
+		}
+
+		game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632Pla6yerTri3ggerEv2ent"):FireServer(unpack(args))
+	end
+end)
+
+Roomall.Name = "Room all"
+Roomall.Parent = Houseeee
+Roomall.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Roomall.Position = UDim2.new(-0.00333333341, 0, 0.793181896, 0)
+Roomall.Size = UDim2.new(0, 299, 0, 50)
+Roomall.Font = Enum.Font.SourceSans
+Roomall.Text = "Room all to all house"
+Roomall.TextColor3 = Color3.fromRGB(255, 255, 255)
+Roomall.TextScaled = true
+Roomall.TextSize = 14.000
+Roomall.TextWrapped = true
+Roomall.MouseButton1Click:Connect(function()
+	for i,Playys in pairs(game.Players:GetPlayers()) do
+		local PlayerTriggerEvent = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632Pla6yerTri3ggerEv2ent")
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 1
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+		
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 2
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+		
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 3
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+		
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 4
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 5
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 6
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 7
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 11
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 12
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 13
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 14
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 15
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 16
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 17
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 18
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 19
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 20
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 21
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 22
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 23
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "GivePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 24
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+	end
+end)
+
+UnRoomall.Name = "UnRoom all"
+UnRoomall.Parent = Houseeee
+UnRoomall.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+UnRoomall.Position = UDim2.new(-0.00333333341, 0, 0.906818271, 0)
+UnRoomall.Size = UDim2.new(0, 299, 0, 50)
+UnRoomall.Font = Enum.Font.SourceSans
+UnRoomall.Text = "UnRoom all to all house"
+UnRoomall.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnRoomall.TextScaled = true
+UnRoomall.TextSize = 14.000
+UnRoomall.TextWrapped = true
+UnRoomall.MouseButton1Click:Connect(function()
+	for i,Playys in pairs(game.Players:GetPlayers()) do
+		local PlayerTriggerEvent = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632Pla6yerTri3ggerEv2ent")
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 1
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+		
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 2
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 3
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 4
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 5
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 6
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 7
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 11
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 12
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 13
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 14
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 15
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 16
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 17
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 18
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 19
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 20
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 21
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 22
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 23
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+		local args = {
+			[1] = "RemovePermissionLoopToServer",
+			[2] = Playys,
+			[3] = 24
+		}
+
+		PlayerTriggerEvent:FireServer(unpack(args))
+
+	end
+end)
+Fs.Name = "Fs"
+Fs.Parent = Frame
+Fs.Active = true
+Fs.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fs.BorderSizePixel = 0
+Fs.Position = UDim2.new(0.210999995, 0, 0.136000007, 0)
+Fs.Size = UDim2.new(0, 300, 0, 190)
+Fs.Visible = false
+Fs.CanvasSize = UDim2.new(0, 0, 3, 0)
+Fs.ScrollBarThickness = 0
+
+Rainbow.Name = "Rainbow"
+Rainbow.Parent = Fs
+Rainbow.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Rainbow.BorderSizePixel = 0
+Rainbow.Size = UDim2.new(0, 300, 0, 50)
+Rainbow.Font = Enum.Font.SourceSans
+Rainbow.Text = "Rainbow Character Off"
+Rainbow.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow.TextScaled = true
+Rainbow.TextSize = 14.000
+Rainbow.TextWrapped = true
+Rainbow.MouseButton1Click:Connect(function()
+	local Avatar = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632Up6dat3eAva2tar")
+	if toggle7 then
+		toggle7 = false
+		Rainbow.Text = "Rainbow Character Off"
+	else
+		toggle7 = true
+		Rainbow.Text = "Rainbow Character On"
+	end
+	while true do
+		wait()
+		if toggle7 then
+			local args = {
+				[1] = "skintone",
+				[2] = "Pink"
+			}
+
+			Avatar:FireServer(unpack(args))
+			wait(.1)
+			local args = {
+				[1] = "skintone",
+				[2] = "New Yeller"
+			}
+
+			Avatar:FireServer(unpack(args))
+			wait(.1)
+			local args = {
+				[1] = "skintone",
+				[2] = "Deep orange"
+			}
+
+			Avatar:FireServer(unpack(args))
+			wait(.1)
+			local args = {
+				[1] = "skintone",
+				[2] = "Really red"
+			}
+
+			Avatar:FireServer(unpack(args))
+			wait(.1)
+			local args = {
+				[1] = "skintone",
+				[2] = "Lime green"
+			}
+
+			Avatar:FireServer(unpack(args))
+			wait(.1)
+			local args = {
+				[1] = "skintone",
+				[2] = "Toothpaste"
+			}
+
+			Avatar:FireServer(unpack(args))
+			wait(.1)
+			local args = {
+				[1] = "skintone",
+				[2] = "Really blue"
+			}
+
+			Avatar:FireServer(unpack(args))
+			wait(.1)
+			local args = {
+				[1] = "skintone",
+				[2] = "Magenta"
+			}
+
+			Avatar:FireServer(unpack(args))
+		end
+	end
+end)
+
+Verybrigthlight.Name = "Very brigth light"
+Verybrigthlight.Parent = Fs
+Verybrigthlight.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Verybrigthlight.BorderSizePixel = 0
+Verybrigthlight.Position = UDim2.new(0, 0, 0.075666666, 0)
+Verybrigthlight.Size = UDim2.new(0, 300, 0, 50)
+Verybrigthlight.Font = Enum.Font.SourceSans
+Verybrigthlight.Text = "Very bright light Off"
+Verybrigthlight.TextColor3 = Color3.fromRGB(255, 255, 255)
+Verybrigthlight.TextScaled = true
+Verybrigthlight.TextSize = 14.000
+Verybrigthlight.TextWrapped = true
+Verybrigthlight.MouseButton1Click:Connect(function()
+	local Tools = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632T6o3o2l")
+	if toggle8 then
+		toggle8 = false
+		Verybrigthlight.Text = "Very bright light Off"
+	else
+		toggle8 = true
+		Verybrigthlight.Text = "Very bright light On"
+	end
+	while true do
+		wait()
+		if toggle8 then
+			local args = {
+				[1] = "PickingTools",
+				[2] = "FlashLight"
+			}
+
+			Tools:InvokeServer(unpack(args))
+
+
+			for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+				if tools:IsA("Tool") then
+					tools.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+
+			local args = {
+				[1] = "ClearAllTools"
+			}
+
+			game:GetService("ReplicatedStorage").RemoteEvents.ClearTools:FireServer(unpack(args))
+		end
+	end
+end)
+
+firehat.Name = "fire hat"
+firehat.Parent = Fs
+firehat.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+firehat.BorderSizePixel = 0
+firehat.Position = UDim2.new(0, 0, 0.150272727, 0)
+firehat.Size = UDim2.new(0, 300, 0, 50)
+firehat.Font = Enum.Font.SourceSans
+firehat.Text = "fire hat Off"
+firehat.TextColor3 = Color3.fromRGB(255, 255, 255)
+firehat.TextScaled = true
+firehat.TextSize = 14.000
+firehat.TextWrapped = true
+firehat.MouseButton1Click:Connect(function()
+	local Avatar = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632Up6dat3eAva2tar")
+	if toggle9 then
+		toggle9 = false
+		firehat.Text = "fire hat Off"
+	else
+		toggle9 = true
+		firehat.Text = "fire hat On"
+	end
+	while true do
+		wait()
+		if toggle9 then
+			local args = {
+				[1] = "wear",
+				[2] = 215718515
+			}
+
+			Avatar:FireServer(unpack(args))
+		end
+	end
+end)
+
+Sparklehat.Name = "Sparkle hat"
+Sparklehat.Parent = Fs
+Sparklehat.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Sparklehat.BorderSizePixel = 0
+Sparklehat.Position = UDim2.new(0, 0, 0.227909103, 0)
+Sparklehat.Size = UDim2.new(0, 300, 0, 50)
+Sparklehat.Font = Enum.Font.SourceSans
+Sparklehat.Text = "Sparkle hat Off"
+Sparklehat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sparklehat.TextScaled = true
+Sparklehat.TextSize = 14.000
+Sparklehat.TextWrapped = true
+Sparklehat.MouseButton1Click:Connect(function()
+	local Avatar = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632Up6dat3eAva2tar")
+	if toggle10 then
+		toggle10 = false
+		Sparklehat.Text = "Sparkle hat Off"
+	else
+		toggle10 = true
+		Sparklehat.Text = "Sparkle hat On"
+	end
+	while true do
+		wait()
+		if toggle10 then
+			local args = {
+				[1] = "wear",
+				[2] = 173624561
+			}
+
+			Avatar:FireServer(unpack(args))
+		end
+	end
+end)
+
+Dominus1.Name = "Dominus1"
+Dominus1.Parent = Fs
+Dominus1.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Dominus1.BorderSizePixel = 0
+Dominus1.Position = UDim2.new(-0.00333333341, 0, 0.378666639, 0)
+Dominus1.Size = UDim2.new(0, 300, 0, 50)
+Dominus1.Font = Enum.Font.SourceSans
+Dominus1.Text = "Dominus 1 Off"
+Dominus1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dominus1.TextScaled = true
+Dominus1.TextSize = 14.000
+Dominus1.TextWrapped = true
+function Min()
+	local Avatar = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632Up6dat3eAva2tar")
+	if Dominus1.Text == "Dominus 1 Off" then
+		Dominus1.Text = "Dominus 1 On"
+		local args = {
+			[1] = "wear",
+			[2] = 162067148
+		}
+
+		Avatar:FireServer(unpack(args))
+	elseif Dominus1.Text == "Dominus 1 On" then
+		Dominus1.Text = "Dominus 1 Off"
+		local args = {
+			[1] = "wear",
+			[2] = 162067148
+		}
+
+		Avatar:FireServer(unpack(args))
+	end
+end
+Dominus1.MouseButton1Click:Connect(Min)
+
+Dominus2.Name = "Dominus2"
+Dominus2.Parent = Fs
+Dominus2.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Dominus2.BorderSizePixel = 0
+Dominus2.Position = UDim2.new(0, 0, 0.45024243, 0)
+Dominus2.Size = UDim2.new(0, 300, 0, 50)
+Dominus2.Font = Enum.Font.SourceSans
+Dominus2.Text = "Dominus 2 Off"
+Dominus2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dominus2.TextScaled = true
+Dominus2.TextSize = 14.000
+Dominus2.TextWrapped = true
+function Mi()
+	local Avatar = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632Up6dat3eAva2tar")
+	if Dominus2.Text == "Dominus 2 Off" then
+		Dominus2.Text = "Dominus 2 On"
+		local args = {
+			[1] = "wear",
+			[2] = 4255053867
+		}
+
+		Avatar:FireServer(unpack(args))
+	elseif Dominus2.Text == "Dominus 2 On" then
+		Dominus2.Text = "Dominus 2 Off"
+		local args = {
+			[1] = "wear",
+			[2] = 4255053867
+		}
+
+		Avatar:FireServer(unpack(args))
+	end
+end
+Dominus2.MouseButton1Click:Connect(Mi)
+
+Smokehat.Name = "Smoke hat"
+Smokehat.Parent = Fs
+Smokehat.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Smokehat.BorderSizePixel = 0
+Smokehat.Position = UDim2.new(-0.00333333341, 0, 0.303666711, 0)
+Smokehat.Size = UDim2.new(0, 300, 0, 50)
+Smokehat.Font = Enum.Font.SourceSans
+Smokehat.Text = "Smoke Tool Off"
+Smokehat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Smokehat.TextScaled = true
+Smokehat.TextSize = 14.000
+Smokehat.TextWrapped = true
+Smokehat.MouseButton1Click:Connect(function()
+	local Tools = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632T6o3o2l")
+	if toggle11 then
+		toggle11 = false
+		Smokehat.Text = "Smoke Tool Off"
+	else
+		toggle11 = true
+		Smokehat.Text = "Smoke Tool On"
+	end
+	while true do
+		wait()
+		if toggle11 then
+			local args = {
+				[1] = "PickingTools",
+				[2] = "FireX"
+			}
+
+			Tools:InvokeServer(unpack(args))
+
+
+			for i,tools in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+				if tools:IsA("Tool") then
+					tools.Parent = game.Players.LocalPlayer.Character
+				end
+			end
+
+			local args = {
+				[1] = "ClearAllTools"
+			}
+
+			game:GetService("ReplicatedStorage").RemoteEvents.ClearTools:FireServer(unpack(args))
+		end
+	end
+end)
+
+Dominus3.Name = "Dominus3"
+Dominus3.Parent = Fs
+Dominus3.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+Dominus3.BorderSizePixel = 0
+Dominus3.Position = UDim2.new(3.25962901e-09, 0, 0.527121246, 0)
+Dominus3.Size = UDim2.new(0, 300, 0, 50)
+Dominus3.Font = Enum.Font.SourceSans
+Dominus3.Text = "Dominus 3 Off"
+Dominus3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dominus3.TextScaled = true
+Dominus3.TextSize = 14.000
+Dominus3.TextWrapped = true
+function Mii()
+	local Avatar = game:GetService("ReplicatedStorage").RemoteEvents.RE:FindFirstChild("632Up6dat3eAva2tar")
+	if Dominus3.Text == "Dominus 3 Off" then
+		Dominus3.Text = "Dominus 3 On"
+		local args = {
+			[1] = "wear",
+			[2] = 527365852
+		}
+
+		Avatar:FireServer(unpack(args))
+	elseif Dominus3.Text == "Dominus 3 On" then
+		Dominus3.Text = "Dominus 3 Off"
+		local args = {
+			[1] = "wear",
+			[2] = 527365852
+		}
+
+		Avatar:FireServer(unpack(args))
+	end
+end
+Dominus3.MouseButton1Click:Connect(Mii)
+
+RandomClothes.Name = "Random Clothes"
+RandomClothes.Parent = Fs
+RandomClothes.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+RandomClothes.BorderSizePixel = 0
+RandomClothes.Position = UDim2.new(3.25962901e-09, 0, 0.602878809, 0)
+RandomClothes.Size = UDim2.new(0, 300, 0, 50)
+RandomClothes.Font = Enum.Font.SourceSans
+RandomClothes.Text = "Random Clothes Off"
+RandomClothes.TextColor3 = Color3.fromRGB(255, 255, 255)
+RandomClothes.TextScaled = true
+RandomClothes.TextSize = 14.000
+RandomClothes.TextWrapped = true
+
+RandomPants.Name = "Random Pants"
+RandomPants.Parent = Fs
+RandomPants.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+RandomPants.BorderSizePixel = 0
+RandomPants.Position = UDim2.new(3.25962901e-09, 0, 0.678636372, 0)
+RandomPants.Size = UDim2.new(0, 300, 0, 50)
+RandomPants.Font = Enum.Font.SourceSans
+RandomPants.Text = "Random Pants Off"
+RandomPants.TextColor3 = Color3.fromRGB(255, 255, 255)
+RandomPants.TextScaled = true
+RandomPants.TextSize = 14.000
+RandomPants.TextWrapped = true
+
+RandomHairs.Name = "Random Hairs"
+RandomHairs.Parent = Fs
+RandomHairs.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+RandomHairs.BorderSizePixel = 0
+RandomHairs.Position = UDim2.new(-0.00333333015, 0, 0.754393935, 0)
+RandomHairs.Size = UDim2.new(0, 300, 0, 50)
+RandomHairs.Font = Enum.Font.SourceSans
+RandomHairs.Text = "Random Hairs Off"
+RandomHairs.TextColor3 = Color3.fromRGB(255, 255, 255)
+RandomHairs.TextScaled = true
+RandomHairs.TextSize = 14.000
+RandomHairs.TextWrapped = true
+
+RandomFace.Name = "Random Face"
+RandomFace.Parent = Fs
+RandomFace.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
+RandomFace.BorderSizePixel = 0
+RandomFace.Position = UDim2.new(3.25962901e-09, 0, 0.830151498, 0)
+RandomFace.Size = UDim2.new(0, 300, 0, 50)
+RandomFace.Font = Enum.Font.SourceSans
+RandomFace.Text = "Random Face Off"
+RandomFace.TextColor3 = Color3.fromRGB(255, 255, 255)
+RandomFace.TextScaled = true
+RandomFace.TextSize = 14.000
+RandomFace.TextWrapped = true
+
+TextLabel_2.Parent = Drag
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 110, 0, 30)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "BrookHaven gui V6"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+minimize.Name = "minimize"
+minimize.Parent = Drag
+minimize.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+minimize.BorderSizePixel = 0
+minimize.Position = UDim2.new(0.83157897, 0, 0, 0)
+minimize.Size = UDim2.new(0, 30, 0, 30)
+minimize.Font = Enum.Font.SourceSans
+minimize.Text = "-"
+minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+minimize.TextSize = 50.000
+minimize.TextWrapped = true
+
+Chat2_2.Name = "Chat 2"
+Chat2_2.Parent = BrookHavenguiv6
+Chat2_2.Active = true
+Chat2_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Chat2_2.Draggable = true
+Chat2_2.Position = UDim2.new(0.328947365, 0, 0.318181753, 0)
+Chat2_2.Size = UDim2.new(0, 221, 0, 128)
+Chat2_2.Visible = false
+
+Chatbutton.Name = "Chat button"
+Chatbutton.Parent = Chat2_2
+Chatbutton.BackgroundColor3 = Color3.fromRGB(12, 12, 200)
+Chatbutton.Position = UDim2.new(0.0452488698, 0, 0.7421875, 0)
+Chatbutton.Size = UDim2.new(0, 200, 0, 33)
+Chatbutton.Font = Enum.Font.SourceSans
+Chatbutton.Text = "Chat"
+Chatbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chatbutton.TextScaled = true
+Chatbutton.TextSize = 14.000
+Chatbutton.TextWrapped = true
+
+Texthere.Name = "Texthere"
+Texthere.Parent = Chat2_2
+Texthere.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Texthere.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Texthere.Position = UDim2.new(0.0452488698, 0, 0.3359375, 0)
+Texthere.Size = UDim2.new(0, 200, 0, 42)
+Texthere.Font = Enum.Font.SourceSans
+Texthere.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Texthere.PlaceholderText = "Text here"
+Texthere.Text = ""
+Texthere.TextColor3 = Color3.fromRGB(255, 255, 255)
+Texthere.TextScaled = true
+Texthere.TextSize = 14.000
+Texthere.TextWrapped = true
+
+X.Name = "X"
+X.Parent = Chat2_2
+X.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+X.Position = UDim2.new(1.00000012, 0, -0.0078125, 0)
+X.Size = UDim2.new(0, 40, 0, 40)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 255, 255)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+
+Spectategu.Name = "Spectate gu"
+Spectategu.Parent = BrookHavenguiv6
+Spectategu.Active = true
+Spectategu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Spectategu.Draggable = true
+Spectategu.Position = UDim2.new(0.328947365, 0, 0.318181753, 0)
+Spectategu.Size = UDim2.new(0, 221, 0, 128)
+Spectategu.Visible = false
+
+X_2.Name = "X"
+X_2.Parent = Spectategu
+X_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+X_2.Position = UDim2.new(1.00000012, 0, -0.0078125, 0)
+X_2.Size = UDim2.new(0, 40, 0, 40)
+X_2.Font = Enum.Font.SourceSans
+X_2.Text = "X"
+X_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+X_2.TextScaled = true
+X_2.TextSize = 14.000
+X_2.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = BrookHavenguiv6
+Open.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0, 0, 0.393750012, 0)
+Open.Size = UDim2.new(0, 78, 0, 50)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+Open.MouseButton1Click:Connect(function()
+	Drag.Visible = true
+	Open.Visible = false
+end)
+
+PickingHouseColor.Name = "PickingHouseColor"
+PickingHouseColor.Parent = BrookHavenguiv6
+PickingHouseColor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PickingHouseColor.Size = UDim2.new(0, 200, 0, 50)
+PickingHouseColor.Visible = false
+PickingHouseColor.Font = Enum.Font.SourceSans
+PickingHouseColor.Text = "632Pick6ingHou3seCo2lor"
+PickingHouseColor.TextColor3 = Color3.fromRGB(0, 0, 0)
+PickingHouseColor.TextSize = 14.000
